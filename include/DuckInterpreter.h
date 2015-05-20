@@ -20,11 +20,12 @@ class DuckInterpreter
         void interpretChar(char);
     protected:
         map<char, FunctionFunctor*> functions;
-        enum InterpretingType{Ignore, IgnoreAll, Accept};
+        enum InterpretingType{Accept, Ignore, IgnoreAll, Reading};
         std::stack<InterpretingType> interpretingState;
         list<double> circle;
-        void specialCharHandle(char);
+        void interpretSpecialChar(char);
         void topTwoAction(doubleAction);
+        bool interpretEncapsulator(char);
     private:
 };
 
