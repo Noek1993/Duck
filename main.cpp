@@ -11,7 +11,7 @@ int main()
     cin >> in;
     while(in != '`')
     {
-        duck.InterpretChar(in);
+        duck.interpretChar(in);
         cin >> in;
     }
     cout << "Quack!" << endl;

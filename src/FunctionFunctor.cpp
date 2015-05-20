@@ -13,6 +13,6 @@ FunctionFunctor::~FunctionFunctor()
 void FunctionFunctor::operator()()
 {
     for(string::iterator it = function_str.begin(); it < function_str.end(); it++){
-        duck->InterpretChar(*it);
+        duck->interpretChar(*it);
     }
 }
