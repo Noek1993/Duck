@@ -12,7 +12,7 @@ int main()
     while(in != '`')
     {
         duck.interpretChar(in);
-        cin >> in;
+        cin >> noskipws >> in;
     }
     } catch (int e) {}
     cout << "Quack!" << endl;
