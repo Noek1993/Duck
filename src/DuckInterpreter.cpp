@@ -39,6 +39,9 @@ void DuckInterpreter::interpretChar(char c)
         case('&'):
             topTwoAction(&doubleAnd);
             break;
+        case('\\'):
+            topTwoAction(&doubleBigger);
+            break;
         case('.'):
             cout << (circle.front());
             circle.pop_front();

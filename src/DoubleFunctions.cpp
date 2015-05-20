@@ -34,3 +34,9 @@ double doubleEqual (const double a, const double b)
 {
     return a == b;
 }
+
+double doubleBigger (const double a, const double b)
+{
+    return a > b;
+}
+
