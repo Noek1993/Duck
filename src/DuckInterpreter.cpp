@@ -42,6 +42,9 @@ void DuckInterpreter::interpretChar(char c)
         case('"'):
             interpretingState.push(Reading);
             break;
+        case('\\'):
+            topTwoAction(&doubleBigger);
+            break;
         case('.'):
             cout << (circle.front());
             circle.pop_front();

@@ -8,5 +8,6 @@ double multiply (const double a, const double b);
 double doubleAnd (const double a, const double b);
 double doubleOr (const double a, const double b);
 double doubleEqual (const double a, const double b);
+double doubleBigger (const double a, const double b);
 
 #endif // DOUBLEFUNCTIONS_H
