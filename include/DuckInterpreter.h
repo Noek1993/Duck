@@ -10,6 +10,8 @@ using namespace std;
 
 class FunctionFunctor;
 
+typedef double (*doubleAction)(const double, const double);
+
 class DuckInterpreter
 {
     public:
@@ -21,7 +23,8 @@ class DuckInterpreter
         enum InterpretingType{Accept, Ignore, IgnoreAll, Reading};
         std::stack<InterpretingType> interpretingState;
         list<double> circle;
-        void specialCharHandle(char);
+        void interpretSpecialChar(char);
+        void topTwoAction(doubleAction);
         bool interpretEncapsulator(char);
     private:
 };
