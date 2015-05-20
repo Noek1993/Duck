@@ -34,9 +34,11 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/DoubleFunctions.h" />
 		<Unit filename="include/DuckInterpreter.h" />
 		<Unit filename="include/FunctionFunctor.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/DoubleFunctions.cpp" />
 		<Unit filename="src/DuckInterpreter.cpp" />
 		<Unit filename="src/FunctionFunctor.cpp" />
 		<Extensions>
