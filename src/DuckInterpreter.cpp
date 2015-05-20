@@ -12,15 +12,15 @@ DuckInterpreter::~DuckInterpreter()
 
 void DuckInterpreter::interpretChar(char c)
 {
-    //Interpret Characaters
+    //Interpret Characters
     switch(c){
     case('.'):
-        cout << (dataStack.front());
-        dataStack.pop_front();
+        cout << (circle.front());
+        circle.pop_front();
         break;
     case(','):
-        cout << (char)(dataStack.front());
-        dataStack.pop_front();
+        cout << (char)(circle.front());
+        circle.pop_front();
         break;
     default:
         specialCharHandle(c);
@@ -30,9 +30,9 @@ void DuckInterpreter::interpretChar(char c)
 
 void DuckInterpreter::specialCharHandle(char c)
 {
+    // When inputting a number, the number gets added to the circle
     if(c >= '0' && c <= '9'){
-        double d = (c - '0');
-        dataStack.push_front(d);
+        circle.push_front(c - '0');
     }
 }
 

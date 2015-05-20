@@ -20,7 +20,7 @@ class DuckInterpreter
         map<char, FunctionFunctor*> functions;
         enum InterpretingType{Ignore, IgnoreAll, Accept};
         std::stack<InterpretingType> interpretingState;
-        list<double> dataStack;
+        list<double> circle;
         void specialCharHandle(char);
     private:
 };
