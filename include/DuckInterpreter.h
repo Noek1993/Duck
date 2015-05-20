@@ -1,7 +1,9 @@
 #ifndef DUCKINTERPRETER_H
 #define DUCKINTERPRETER_H
 
+#include <iostream>
 #include <map>
+#include <list>
 
 using namespace std;
 
@@ -12,9 +14,11 @@ class DuckInterpreter
     public:
         DuckInterpreter();
         virtual ~DuckInterpreter();
-        void InterpretChar(char);
+        void interpretChar(char);
     protected:
         map<char, FunctionFunctor*> functions;
+        list<double> dataStack;
+        void specialCharHandle(char);
     private:
 };
 
